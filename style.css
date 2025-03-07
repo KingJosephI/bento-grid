@@ -9,9 +9,9 @@
 
 :root {
   /* Colors */
-  --purple-100: hsl(254, 88%, 90%); 
+  --purple-100: hsl(255, 88%, 90%); 
   --purple-500: hsl(256, 67%, 59%); 
-  --yellow-100: hsl(31, 66%, 93%); 
+  --yellow-100: hsl(33, 67%, 93%); 
   --yellow-500: hsl(39, 100%, 71%); 
   --white: hsl(0, 0%, 100%); 
   --black: hsl(0, 0%, 7%);
@@ -26,6 +26,7 @@
   gap: 32px;
   padding: 32px 16px;
   font-family: "DM Sans", sans-serif;
+  background-color: #F6F5F6;
 }
 
 .card {
@@ -34,16 +35,18 @@
   line-height: 90%;
   letter-spacing: -6%;
   font-weight: 500;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.card:first-of-type {
+.card__one {
   background-color: var(--purple-500);
   color: var(--white);
   padding: 40px 32px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
 
   .card__title {
     font-size: 46px;
@@ -83,7 +86,21 @@
     }
 }
 
-.card:nth-child(2) {
+.card__two {
+  background-color: var(--white); 
+  gap: 16px;
+  align-items: flex-start;
+  
+  .card__img {
+    width: 316px;
+  }
+}
+
+.card__three {
+background-color: var(--yellow-500);
+padding-bottom: 0;
+gap: 16px;
+align-items: start;
 
 }
 
