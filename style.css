@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 
 * {
@@ -8,7 +8,6 @@
 }
 
 :root {
-  /* Colors */
   --purple-100: hsl(255, 88%, 90%); 
   --purple-500: hsl(256, 67%, 59%); 
   --yellow-100: hsl(33, 67%, 93%); 
@@ -16,29 +15,34 @@
   --white: hsl(0, 0%, 100%); 
   --black: hsl(0, 0%, 7%);
 
-  /* Fonts */
-  --font-size: 18px;
+  --font-size--default: 18px;
 }
+
 
 .container {
-  min-height: 100vh;
+  /* min-width: 100vw;
   display: grid;
-  gap: 32px;
-  padding: 32px 16px;
+  gap: 32px;*/
   font-family: "DM Sans", sans-serif;
-  background-color: #F6F5F6;
+  background-color: #F6F5F6; 
+  padding: 32px 16px;
+  
 }
 
-.card {
+.card {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 10px;
   font-size: 26px;
   line-height: 90%;
   letter-spacing: -6%;
   font-weight: 500;
   padding: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  .card__img {
+    width: 100px;
+  }
 }
 
 .card__one {
@@ -46,7 +50,6 @@
   color: var(--white);
   padding: 40px 32px;
   text-align: center;
-
 
   .card__title {
     font-size: 46px;
@@ -83,7 +86,7 @@
       line-height: 100%;
       letter-spacing: -3%;
     }
-    }
+  }
 }
 
 .card__two {
@@ -97,11 +100,51 @@
 }
 
 .card__three {
-background-color: var(--yellow-500);
-padding-bottom: 0;
-gap: 16px;
-align-items: start;
+  background-color: var(--yellow-500);
+  padding-bottom: 0;
+  gap: 16px;
+  align-items: start;
+
+  .card__img {
+    width: 208px;
+  }
 
 }
 
+.card__four {
+  background-color: var(--purple-100);
+  gap: 32px;
+  text-align: center;
 
+  .card__title{
+    font-weight: 500;
+  }
+  
+  .card__img {
+    width: 100%;
+  }
+
+  .card__text {
+    font-size: 14px;
+  }
+}
+
+.card__five {
+  background-color: var(--purple-500);
+
+}
+
+.card__six {
+  background-color: var(--white);
+
+}
+
+.card__seven {
+  background-color: var(--yellow-100);
+
+}
+
+.card__eight {
+  background-color: var(--yellow-500);
+
+}
