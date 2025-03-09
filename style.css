@@ -20,9 +20,9 @@
 
 
 .container {
-  /* min-width: 100vw;
-  display: grid;
-  gap: 32px;*/
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   font-family: "DM Sans", sans-serif;
   background-color: #F6F5F6; 
   padding: 32px 16px;
@@ -184,15 +184,84 @@
 
 .card__six {
   background-color: var(--white);
+  align-items: start;
+  gap: 24px;
 
+  .card__title {
+    font-size: 46px;
+    line-height: 42px;
+    font-weight: 500;
+    letter-spacing: -4%;
+    margin-bottom: 15px;
+  }
+
+  .card__text {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+  }
+
+  .card__img {
+    width: 178px;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .card__seven {
   background-color: var(--yellow-100);
+  align-items: start;
+  gap: 24px;
 
+  .card__title {
+    font-size: 32px;
+    line-height: 90%;
+    letter-spacing: -6%;
+    font-weight: 500;
+
+    .quicker {
+      color: var(--purple-500);
+    }
+  }
+
+  .card__img {
+    width: 190.47px;
+  }
+
+  @media (min-width: 768px) {
+    .card__title {
+      font-size: 36px;
+      line-height: 30;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .card__title {
+      font-size: 40px;
+    }
+    
+  }
 }
 
 .card__eight {
   background-color: var(--yellow-500);
+  gap: 24px;
+  align-items: start;
+
+  .card__title {
+    font-size: 32px;
+    line-height: 90%;
+    letter-spacing: -6%;
+    font-weight: 500;
+  }
+
+  .card__img {
+    width: 300px;
+
+  }
+
 
 }
