@@ -26,6 +26,10 @@
   font-family: "DM Sans", sans-serif;
   background-color: #F6F5F6; 
   padding: 32px 16px;
+
+  @media (min-width: 768px) {
+    padding: 52px 42px;
+  }
   
 }
 
@@ -113,10 +117,12 @@
 
 .card__four {
   background-color: var(--purple-100);
-  gap: 32px;
+  padding: 32px;
+  gap: 24px;
   text-align: center;
 
   .card__title{
+    font-size: 26px;
     font-weight: 500;
   }
   
@@ -125,12 +131,54 @@
   }
 
   .card__text {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  @media (min-width: 768px) {
+    .card__title {
+      font-size: 28px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .card__title {
+      font-size: 32px;
+    }
   }
 }
 
 .card__five {
   background-color: var(--purple-500);
+  gap: 40px;
+
+  .card__img {
+    width: 228px;
+  }
+
+  .card__text {
+    font-size: 32px;
+    line-height: 28px;
+    color: var(--white);
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row ;
+    padding-inline: 100px;
+
+    .card__text {
+      font-size: 36px;
+      line-height: 90%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .card__text {
+        font-size: 40px;
+    }
+  }
 
 }
 
