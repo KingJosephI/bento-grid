@@ -353,6 +353,6 @@ video {
 
   @media (min-width: 1024px) {
     grid-area: write; 
-    justify-content: space-between;
+    justify-content: center;
   }
 }
