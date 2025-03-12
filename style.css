@@ -7,10 +7,6 @@
   box-sizing: border-box;
 }
 
-body {
-  /* background-color: #F6F5F6; */
-}
-
 img,
 video {
   max-width: 100%;
@@ -168,7 +164,6 @@ video {
 
 .card__four {
   background-color: var(--purple-100);
-  /* background-color: red; */
   padding: 32px;
   gap: 24px;
   text-align: center;
@@ -254,11 +249,13 @@ video {
   }
   
   @media (min-width: 1024px) {
+    padding: 0 32px;
     grid-area: grow;
+    gap: 0;
 
     .card__text {
         font-size: 40px;
-
+        text-align: left;
     }
   }
 
